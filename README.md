@@ -7,8 +7,6 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
---
-
 Draft module to create AWS Workspaces.
 
 ## Usage
@@ -22,6 +20,7 @@ Include this repository as a module in your existing Terraform code:
 ```hcl
 module "workspaces" {
   source                 = "jameswoolfenden/workspaces/aws"
+  version                = "v0.0.5"
   common_tags            = var.common_tags
 }
 ```

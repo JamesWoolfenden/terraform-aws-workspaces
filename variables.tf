@@ -6,7 +6,6 @@ variable "common_tags" {
 variable "root_volume_encryption_enabled" {
   type    = bool
   default = true
-
 }
 
 variable "user_volume_encryption_enabled" {

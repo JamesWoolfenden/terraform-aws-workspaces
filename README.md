@@ -5,14 +5,19 @@
 [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-workspaces/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-workspaces)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-workspaces.svg)](https://github.com/JamesWoolfenden/terraform-aws-workspaces/releases/latest)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
----
+--
 
-Draft module to create AWS Workspaces
+Draft module to create AWS Workspaces.
 
 ## Usage
 
-Include this repository as a module in your existing terraform code:
+This is a very basic example (so far).
+
+![workspaces](./diagram/workspaces.png)
+
+Include this repository as a module in your existing Terraform code:
 
 ```hcl
 module "workspaces" {

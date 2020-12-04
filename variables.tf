@@ -1,6 +1,6 @@
 variable "common_tags" {
   description = "This is to help you add tags to your cloud objects"
-  type        = map
+  type        = map(any)
 }
 
 variable "root_volume_encryption_enabled" {
@@ -16,6 +16,7 @@ variable "user_volume_encryption_enabled" {
 variable "volume_encryption_key" {
   type        = string
   description = "(optional) describe your variable"
+  sensitive   = true
   default     = "alias/aws/workspaces"
 }
 

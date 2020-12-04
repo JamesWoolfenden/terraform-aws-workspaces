@@ -13,12 +13,12 @@ This is a very basic example (so far).
 
 ![workspaces](./diagram/workspaces.png)
 
-Include this repository as a module in your existing Terraform code:
+To implement include af file in your repository in your existing Terraform code:
 
 ```hcl
 module "workspaces" {
   source                 = "jameswoolfenden/workspaces/aws"
-  version                = "v0.0.5"
+  version                = "v0.0.11"
   common_tags            = var.common_tags
 }
 ```
@@ -41,7 +41,7 @@ No requirements.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | bundle\_id | (optional) describe your variable | `string` | `"wsb-bh8rsxt14"` | no |
-| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | directory\_id | (optional) describe your variable | `string` | n/a | yes |
 | root\_volume\_encryption\_enabled | n/a | `bool` | `true` | no |
 | user\_name | n/a | `string` | n/a | yes |

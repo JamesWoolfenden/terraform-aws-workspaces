@@ -2,8 +2,12 @@
 
 [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-workspaces/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-workspaces)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-workspaces.svg)](https://github.com/JamesWoolfenden/terraform-aws-workspaces/releases/latest)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-waf-global.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-waf-global/releases/latest)
+![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
+[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/JamesWoolfenden/terraform-aws-waf-global/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-waf-global&benchmark=CIS+AWS+V1.2)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
+[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-aws-waf-global/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-waf-global&benchmark=INFRASTRUCTURE+SECURITY)
 
 Draft module to create AWS Workspaces.
 
@@ -26,7 +30,6 @@ module "workspaces" {
 ## Detailed Notes
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
@@ -34,25 +37,25 @@ No requirements.
 ## Providers
 
 | Name | Version |
-| ---- | ------- |
-| aws  | n/a     |
+|------|---------|
+| aws | n/a |
 
 ## Inputs
 
-| Name                           | Description                                        | Type       | Default                  | Required |
-| ------------------------------ | -------------------------------------------------- | ---------- | ------------------------ | :------: |
-| bundle_id                      | (optional) describe your variable                  | `string`   | `"wsb-bh8rsxt14"`        |    no    |
-| common_tags                    | This is to help you add tags to your cloud objects | `map(any)` | n/a                      |   yes    |
-| directory_id                   | (optional) describe your variable                  | `string`   | n/a                      |   yes    |
-| root_volume_encryption_enabled | n/a                                                | `bool`     | `true`                   |    no    |
-| user_name                      | n/a                                                | `string`   | n/a                      |   yes    |
-| user_volume_encryption_enabled | n/a                                                | `bool`     | `true`                   |    no    |
-| volume_encryption_key          | (optional) describe your variable                  | `string`   | `"alias/aws/workspaces"` |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| bundle\_id | (optional) describe your variable | `string` | `"wsb-bh8rsxt14"` | no |
+| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| directory\_id | (optional) describe your variable | `string` | n/a | yes |
+| root\_volume\_encryption\_enabled | n/a | `bool` | `true` | no |
+| user\_name | n/a | `string` | n/a | yes |
+| user\_volume\_encryption\_enabled | n/a | `bool` | `true` | no |
+| volume\_encryption\_key | (optional) describe your variable | `string` | `"alias/aws/workspaces"` | no |
 
 ## Outputs
 
-| Name      | Description   |
-| --------- | ------------- |
+| Name | Description |
+|------|-------------|
 | directory | The directory |
 | workspace | The workspace |
 

@@ -40,6 +40,19 @@ No requirements.
 |------|---------|
 | aws | n/a |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_directory_service_directory](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/directory_service_directory) |
+| [aws_workspaces_bundle](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/workspaces_bundle) |
+| [aws_workspaces_directory](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/workspaces_directory) |
+| [aws_workspaces_workspace](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/workspaces_workspace) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -58,7 +71,6 @@ No requirements.
 |------|-------------|
 | directory | The directory |
 | workspace | The workspace |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects

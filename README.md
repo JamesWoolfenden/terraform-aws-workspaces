@@ -30,7 +30,47 @@ module "workspaces" {
 ## Detailed Notes
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
 
+No requirements.
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_directory_service_directory](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/directory_service_directory) |
+| [aws_workspaces_bundle](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/workspaces_bundle) |
+| [aws_workspaces_directory](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/workspaces_directory) |
+| [aws_workspaces_workspace](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/workspaces_workspace) |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| bundle\_id | (optional) describe your variable | `string` | `"wsb-bh8rsxt14"` | no |
+| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| directory\_id | (optional) describe your variable | `string` | n/a | yes |
+| root\_volume\_encryption\_enabled | n/a | `bool` | `true` | no |
+| user\_name | n/a | `string` | n/a | yes |
+| user\_volume\_encryption\_enabled | n/a | `bool` | `true` | no |
+| volume\_encryption\_key | (optional) describe your variable | `string` | `"alias/aws/workspaces"` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| directory | The directory |
+| workspace | The workspace |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects

@@ -21,3 +21,4 @@ lambda
 *.bak
 .terraform.tfstate.lock.info
 .terraform.lock.hcl
+tf.json

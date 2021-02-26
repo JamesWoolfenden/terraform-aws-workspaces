@@ -1,3 +1,4 @@
 common_tags = {
-  "createdby" = "terraform"
-module = "terraform-aws-workspaces" }
+  "createdby" = "Terraform"
+  module      = "terraform-aws-workspaces"
+}

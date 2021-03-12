@@ -43,10 +43,10 @@ docs:
 	terraform-docs md . > README.md
 
 valid:
-	terraform fmt -recursive
-	checkov -d . --external-checks-dir ../../checkov
-	tfsec .
-	terrascan scan
+	-terraform fmt -recursive
+	-checkov -d . --external-checks-dir ../../checkov
+	-tfsec .
+	-terrascan scan
 	docker pull checkmarx/kics:latest
 	docker run -v $(CURDIR):/path checkmarx/kics:latest -p "/path"
 

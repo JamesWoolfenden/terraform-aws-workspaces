@@ -5,4 +5,5 @@ resource "aws_workspaces_directory" "main" {
     increase_volume_size = true
     rebuild_workspace    = true
   }
+  tags = var.common_tags
 }

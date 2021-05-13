@@ -17,6 +17,9 @@ resource "random_string" "password" {
 }
 
 resource "aws_vpc" "main" {
+  # checkov:skip=CKV2_AWS_1: test resource
+  # checkov:skip=CKV2_AWS_11: test resource
+  # checkov:skip=CKV2_AWS_12: test resource
   cidr_block = "10.0.0.0/16"
   tags       = var.common_tags
 }

@@ -74,4 +74,4 @@ purge:
 	$(BLAT)
 
 cost:
-	infracost --path .
+	infracost breakdown --path .

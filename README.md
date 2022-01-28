@@ -30,15 +30,16 @@ module "workspaces" {
 ## Detailed Notes
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| Name                                             | Version |
+| ------------------------------------------------ | ------- |
+| <a name="provider_aws"></a> [aws](#provider_aws) | n/a     |
 
 ## Modules
 
@@ -46,31 +47,32 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [aws_workspaces_directory.main](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/workspaces_directory) | resource |
-| [aws_workspaces_workspace.example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/workspaces_workspace) | resource |
+| Name                                                                                                                                                  | Type        |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| [aws_workspaces_directory.main](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/workspaces_directory)                     | resource    |
+| [aws_workspaces_workspace.example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/workspaces_workspace)                  | resource    |
 | [aws_directory_service_directory.example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/directory_service_directory) | data source |
-| [aws_workspaces_bundle.bundle](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/workspaces_bundle) | data source |
+| [aws_workspaces_bundle.bundle](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/workspaces_bundle)                      | data source |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_bundle_id"></a> [bundle\_id](#input\_bundle\_id) | (optional) describe your variable | `string` | `"wsb-bh8rsxt14"` | no |
-| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| <a name="input_directory_id"></a> [directory\_id](#input\_directory\_id) | (optional) describe your variable | `string` | n/a | yes |
-| <a name="input_root_volume_encryption_enabled"></a> [root\_volume\_encryption\_enabled](#input\_root\_volume\_encryption\_enabled) | n/a | `bool` | `true` | no |
-| <a name="input_user_name"></a> [user\_name](#input\_user\_name) | n/a | `string` | n/a | yes |
-| <a name="input_user_volume_encryption_enabled"></a> [user\_volume\_encryption\_enabled](#input\_user\_volume\_encryption\_enabled) | n/a | `bool` | `true` | no |
-| <a name="input_volume_encryption_key"></a> [volume\_encryption\_key](#input\_volume\_encryption\_key) | (optional) describe your variable | `string` | `"alias/aws/workspaces"` | no |
+| Name                                                                                                                        | Description                                        | Type       | Default                  | Required |
+| --------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------- | ------------------------ | :------: |
+| <a name="input_bundle_id"></a> [bundle_id](#input_bundle_id)                                                                | (optional) describe your variable                  | `string`   | `"wsb-bh8rsxt14"`        |    no    |
+| <a name="input_common_tags"></a> [common_tags](#input_common_tags)                                                          | This is to help you add tags to your cloud objects | `map(any)` | n/a                      |   yes    |
+| <a name="input_directory_id"></a> [directory_id](#input_directory_id)                                                       | (optional) describe your variable                  | `string`   | n/a                      |   yes    |
+| <a name="input_root_volume_encryption_enabled"></a> [root_volume_encryption_enabled](#input_root_volume_encryption_enabled) | n/a                                                | `bool`     | `true`                   |    no    |
+| <a name="input_user_name"></a> [user_name](#input_user_name)                                                                | n/a                                                | `string`   | n/a                      |   yes    |
+| <a name="input_user_volume_encryption_enabled"></a> [user_volume_encryption_enabled](#input_user_volume_encryption_enabled) | n/a                                                | `bool`     | `true`                   |    no    |
+| <a name="input_volume_encryption_key"></a> [volume_encryption_key](#input_volume_encryption_key)                            | (optional) describe your variable                  | `string`   | `"alias/aws/workspaces"` |    no    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_directory"></a> [directory](#output\_directory) | The directory |
-| <a name="output_workspace"></a> [workspace](#output\_workspace) | The workspace |
+| Name                                                           | Description   |
+| -------------------------------------------------------------- | ------------- |
+| <a name="output_directory"></a> [directory](#output_directory) | The directory |
+| <a name="output_workspace"></a> [workspace](#output_workspace) | The workspace |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
@@ -93,7 +95,7 @@ Please use the [issue tracker](https://github.com/jameswoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2021 James Woolfenden
+Copyright © 2019-2022 James Woolfenden
 
 ## License
 

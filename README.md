@@ -93,7 +93,14 @@ resource "aws_iam_policy" "terraform_pike" {
             "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
-                "workspaces:DescribeWorkspaceBundles"
+                "workspaces:CreateTags",
+                "workspaces:CreateWorkspaces",
+                "workspaces:DeleteTags",
+                "workspaces:DeregisterWorkspaceDirectory",
+                "workspaces:DescribeWorkspaceBundles",
+                "workspaces:ModifyWorkspaceProperties",
+                "workspaces:RegisterWorkspaceDirectory",
+                "workspaces:TerminateWorkspaces"
             ],
             "Resource": [
                 "*"
